@@ -1,0 +1,45 @@
+.breadcrumb {
+    height:20px;
+    top: 0;
+    padding: 10px 16px;
+    padding-left: 160px;
+    list-style: none;
+    background-color: #eee;
+    text-align: center;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+  .breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+footer .breadcrumb li+li:before {
+    padding: 8px;
+    color: #95a5a6;
+    content: "|\00a0";
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    background-color: #eee;
+    width: 100%;
+}
+
+footer  p {
+    margin: 0;
+    margin-bottom: 10px;
+}
