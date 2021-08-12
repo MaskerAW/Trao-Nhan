@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/login-register.css">
+    <!-- neccessary -->
     <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/scroll.css">
     <title>Đăng Nhập | Trao & Nhận</title>
 </head>
+
 <body>
     <header></header>
     <section class="cccc">
         <div class="Form login">
             <div style="width: 100%;display:flex;justify-content: center;">
-                <h1><a href="main.html" class="Sooola">Clicky</a>|Welcome Back</h1> </h1>
+                <h1>Welcome Back</h1>
             </div>
             <input type="email" placeholder="Email" class="user-email">
             <input type="password" placeholder="Password" class="user-password">
@@ -21,23 +26,31 @@
                 <div>
                     <input type="checkbox" class="check-box"><label for="" class="C-box">Remember me</label>
                 </div>
-                <a href="">Forgot Password?</a>
+                <a class="fgt">Forgot Password?</a>
             </div>
             <p class="alert"></p>
             <button class="btn login" id="color">Login</button>
             <hr>
-            <a href="./register.html" class="btn new-acc">Create New Account</a>
+        </div>
+        <div class="Form reset">
+            <div style="width: 100%;display:flex;justify-content: center;">
+                <h1>I Forgot My Password!!!</h1>
+            </div>
+            <input type="email" placeholder="Enter your email, a mail will be sent to you" class="reset-email">
+            <button class="btn sent">Sent</button>
+            <hr>
         </div>
     </section>
-    <footer>
-        <ul class="breadcrumb">
-            <li>PRIVACY POLICY</li>
-            <li>OPERATION REGULATIONS</li>
-            <li>SHIPPING POLICY</li>
-            <li>REFUND AND REFUND POLICY</li>
-        </ul>
-        <p>Contact: tranvuduythien@gmail.com - 0909003501</p>
-        <p>© 2021 Trao & Nhan - Copyright belong to Tran Vu Duy Thien</p>
+    <footer style="position: fixed;bottom: 0;">
+        <div class="downer-footer">
+            <h4>© 2023 by Tran Vu Duy Thien</h4>
+        </div>
     </footer>
 </body>
+<script type="module" src="../assets/js/login.js"></script>
+<script type="module" src="../assets/js/auth.js"></script>
+<script type="module" src="../assets/js/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
 </html>
