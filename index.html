@@ -6,14 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/homePage.css">
     <!-- neccessary -->
+    <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/scroll.css">
     <title>Trao & Nhận</title>
 </head>
 <body>
-    <header></header>
-    <section class="cccc">
+    <header>
+        <div class="logo-container">
+            <img src="" alt="">
+            <hr>
+            <div>
+                <h3>Chào mừng bạn đến với Trao & Nhận</h3>
+            </div>
+        </div>
+        <div class="content-container">
+            <div>Người Trao</div>
+            <div>Người Nhận</div>
+            <div>Nhật Ký</div>
+            <div>Giới Thiệu</div>
+            <div id="btn-container">
+                <button>Trở Thành Cộng Tác Viên</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div style="height: 100vh;"></div>
+        <div style="height: 300vh;background-color: blue;"></div>
     </section>
     <footer>
         <div class="upper-footer">
@@ -49,8 +69,13 @@
         </div>
         <div class="downer-footer">
             <hr class="line">
-            <h4>© 2023 by Tran Vu Duy Thien</h4>
+            <h4>© 2021 by Tran Vu Duy Thien</h4>
         </div>
     </footer>
 </body>
+<script>
+    window.addEventListener("scroll", () => {
+    document.querySelector('header').classList.toggle('sticky', window.scrollY > 0);
+    });
+</script>
 </html>

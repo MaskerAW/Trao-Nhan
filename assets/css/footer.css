@@ -1,5 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 377px;
+}
+
 footer {
-    width: 98%;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +34,6 @@ footer div {
     display: flex;
     flex-direction: row;
     
-    width: 84%;
     padding-left: 8%;
     padding-right: 8%;
 }
