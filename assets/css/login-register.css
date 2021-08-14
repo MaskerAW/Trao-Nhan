@@ -73,3 +73,7 @@ section {
 .fgt:hover {
     color: blue;
 }
+
+.Form {
+    transition: all 0.5s ease;
+}
